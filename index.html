@@ -3,14 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Dorsa</title>
-  <!-- Athelas font from Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Athelas&display=swap" rel="stylesheet">
   <style>
-    /* Body and general styling */
     body {
       margin: 0;
-      font-family: 'Athelas', serif; /* updated font */
-      background: #f5f2eb; /* birch tone */
+      font-family: 'Athelas', serif;
+      background: #f5f2eb;
       color: #222;
     }
 
@@ -30,35 +28,46 @@
       color: #222;
       font-weight: 400;
       letter-spacing: 1px;
+      font-size: 1rem;
     }
 
     nav a:hover {
       opacity: 0.6;
     }
 
-    /* Centered name */
+    /* Centered title, slightly higher than middle */
     .title {
-      height: 60vh;               /* full screen */
+      height: 100vh;
       display: flex;
-      align-items: center;         /* vertical center */
-      justify-content: center;     /* horizontal center */
-      font-size: 3rem;             /* large name */
-      font-weight: 400;            /* normal weight for serif */
+      align-items: flex-start;
+      justify-content: center;
+      font-size: 5rem;
+      font-weight: 400;
       letter-spacing: 2px;
+      padding-top: 20vh;
+    }
+
+    /* Responsive scaling */
+    @media (max-width: 768px) {
+      .title {
+        font-size: 3rem;
+        padding-top: 15vh;
+      }
+      nav a {
+        font-size: 0.9rem;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="index.html">Collection</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<nav>
+  <a href="index.html">Collection</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
-  <!-- Centered Name -->
-  <div class="title">Dorsa</div>
+<div class="title">Dorsa</div>
 
 </body>
 </html>
