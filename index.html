@@ -12,33 +12,43 @@
       color: #222;
     }
 
-    /* Header container: name + nav */
+    /* Header container: centered title + right nav */
     header {
       display: flex;
-      justify-content: space-between;
-      align-items: center;  /* aligns name and nav vertically */
+      justify-content: center; /* center title */
+      align-items: center;     /* vertically center */
       padding: 15px 50px;
+      position: relative;      /* for nav positioning */
       background: #f5f2eb;
-      position: sticky;
-      top: 0;
+      height: 60px;
       z-index: 10;
     }
 
-    /* Name at the center */
+    /* Title centered in header */
     .name {
-      font-size: 2rem;   /* smaller, subtle size */
+      font-size: 1.5rem;      /* elegant size */
       font-weight: 400;
       letter-spacing: 1px;
+      text-align: center;
+      position: absolute;      /* allows nav to float right */
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     /* Navigation on the right */
+    nav {
+      position: absolute;
+      right: 50px;
+      display: flex;
+      gap: 25px;
+    }
+
     nav a {
       text-decoration: none;
       color: #222;
       font-weight: 400;
       letter-spacing: 1px;
-      margin-left: 25px;
-      font-size: 1rem;  /* default nav font size */
+      font-size: 1rem;
     }
 
     nav a:hover {
@@ -52,9 +62,8 @@
       }
       nav a {
         font-size: 0.9rem;
-        margin-left: 15px;
+        gap: 15px;
       }
-    
     }
   </style>
 </head>
