@@ -1,39 +1,64 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Dorsa</title>
+  <!-- Athelas font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Athelas&display=swap" rel="stylesheet">
   <style>
+    /* Body and general styling */
     body {
       margin: 0;
-      font-family: Athelas, sans-serif;
-      background: #f5f2eb;
+      font-family: 'Athelas', serif; /* updated font */
+      background: #f5f2eb; /* birch tone */
       color: #222;
     }
 
+    /* Navigation bar */
     nav {
-      padding: 20px;
+      position: fixed;
+      top: 0;
+      right: 0;
+      padding: 20px 40px;
       display: flex;
-      justify-content: space-between;
+      gap: 30px;
+      z-index: 10;
     }
 
-    a {
-      color: #222;
+    nav a {
       text-decoration: none;
-      margin-left: 20px;
+      color: #222;
+      font-weight: 400;
+      letter-spacing: 1px;
     }
 
+    nav a:hover {
+      opacity: 0.6;
+    }
+
+    /* Centered name */
     .title {
-      height: 65vh;
+      height: 100vh;               /* full screen */
       display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 3em;
+      align-items: center;         /* vertical center */
+      justify-content: center;     /* horizontal center */
+      font-size: 5rem;             /* large name */
+      font-weight: 400;            /* normal weight for serif */
+      letter-spacing: 2px;
     }
   </style>
 </head>
 <body>
 
-<div class="title">Dorsa</div>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Collection</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Centered Name -->
+  <div class="title">Dorsa</div>
 
 </body>
 </html>
