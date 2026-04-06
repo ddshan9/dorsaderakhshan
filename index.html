@@ -16,8 +16,8 @@
     header {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      padding: 20px 50px;
+      align-items: center;  /* aligns name and nav vertically */
+      padding: 15px 50px;
       background: #f5f2eb;
       position: sticky;
       top: 0;
@@ -26,7 +26,7 @@
 
     /* Name on the left */
     .name {
-      font-size: 2rem;   /* slightly smaller font */
+      font-size: 1.5rem;   /* smaller, subtle size */
       font-weight: 400;
       letter-spacing: 1px;
     }
@@ -38,7 +38,7 @@
       font-weight: 400;
       letter-spacing: 1px;
       margin-left: 25px;
-      font-size: 0.95rem;  /* slightly smaller nav font */
+      font-size: 1rem;  /* default nav font size */
     }
 
     nav a:hover {
@@ -47,11 +47,11 @@
 
     /* Optional hero section below header */
     .hero {
-      height: calc(100vh - 70px); /* remaining screen height */
+      height: calc(100vh - 60px); /* remaining screen height */
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 2.5rem;  /* slightly smaller hero text */
+      font-size: 2rem;  /* hero text size */
       font-weight: 300;
       letter-spacing: 2px;
     }
@@ -59,14 +59,14 @@
     /* Responsive scaling */
     @media (max-width: 768px) {
       .name {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
       }
       nav a {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
         margin-left: 15px;
       }
       .hero {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
       }
     }
   </style>
@@ -82,7 +82,7 @@
   </nav>
 </header>
 
-<!-- Optional hero section below -->
+<!-- Optional hero section below header -->
 <div class="hero">Welcome to my portfolio</div>
 
 </body>
